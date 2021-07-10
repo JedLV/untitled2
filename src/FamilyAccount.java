@@ -22,7 +22,7 @@ public class FamilyAccount {
             switch (selection){
 
                 case '1':
-                   // System.out.println("1 收支明细");
+                    // System.out.println("1 收支明细");
                     System.out.println("-----------当前收支明细记录------------");
                     System.out.println(details);
                     System.out.println("------------------------------------");
@@ -50,14 +50,14 @@ public class FamilyAccount {
                     String minusInfo  = Utility.readMenuSelection();
 
                     //处理balance
-                   if (balance >= minusMoney){
-                       balance -= minusMoney;
+                    if (balance >= minusMoney){
+                        balance -= minusMoney;
 
-                       //处理details
-                       details += ("支出\t" + balance + "\t\t" + minusMoney + "\t\t" + minusInfo + "\n");
-                   }else {
-                       System.out.println("支出超出账户额度，支付失败");
-                   }
+                        //处理details
+                        details += ("支出\t" + balance + "\t\t" + minusMoney + "\t\t" + minusInfo + "\n");
+                    }else {
+                        System.out.println("支出超出账户额度，支付失败");
+                    }
 
                     System.out.println("-----------------登记完成-------------------\n");
                     break;
