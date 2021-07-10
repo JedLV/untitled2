@@ -15,13 +15,13 @@ public class PrimeNumberTest5 {
 
         label:for(int i = 2; i <= 100000; i++){//遍历100000以内的自然数
 
-            for (int j = 2; j <= Math.sqrt(i); j++){//j:被i去除  //优化二：对本身是质数的自然数是有效的
+            for (int j = 2; j <= Math.sqrt(i); j++){//j:被i去除
 
                 if (i % j == 0){//i被j除尽
                    continue label;
                 }
             }
-
+            //能执行到此步骤都是质数
                 count++;
 
         }
